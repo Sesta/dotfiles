@@ -20,6 +20,6 @@ syntax on
 
 augroup fileTypeIndent
   autocmd!
-  autocmd FileType php setlocal shiftwidth=4 tabstop=4
+  autocmd FileType php setlocal shiftwidth=2 tabstop=2
   autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 augroup END
