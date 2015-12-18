@@ -24,3 +24,25 @@ augroup fileTypeIndent
   autocmd FileType php setlocal shiftwidth=2 tabstop=2
   autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 augroup END
+
+if has('vim_starting')
+   " 初回起動時のみruntimepathにneobundleのパスを指定する
+   set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+" NeoBundleを初期化
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+" インストールするプラグインをここに記述
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler'
+
+call neobundle#end()
+
+" NeoBundleCheck を走らせ起動時に未インストールプラグインをインストールする
+NeoBundleCheck
+" ファイルタイプ別のプラグイン/インデントを有効にする
+filetype plugin indent on
+
+
+
