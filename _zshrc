@@ -1,12 +1,3 @@
-# sesta setting
-alias vi="vim"
-alias gco="git checkout"
-alias gst="git status"
-alias gdf="git diff"
-alias pixiv="ssh -A pixiv-dev"
-alias vislab="ssh takedas@www.vislab.cs.tsukuba.ac.jp"
-alias ptnvis="cd /Users/SestaMac/Documents/class/reserch/PatternVis"
-
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/SestaMac/.oh-my-zsh
 
@@ -65,7 +56,6 @@ plugins=(git)
 export PATH="/Users/SestaMac/.anyenv/bin:/usr/local/bin:/usr/local/sbin:/Users/SestaMac/.go/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Library/TeX/texbin"
 eval "$(anyenv init -)"
 
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -94,3 +84,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# sesta setting
+alias vi="vim"
+alias gco="git checkout"
+alias gst="git status"
+alias gdf="git diff"
+alias glg="git log --graph --oneline --color"
+alias pixiv="ssh -A pixiv-dev"
+alias vislab="ssh takedas@www.vislab.cs.tsukuba.ac.jp"
+alias ptnvis="cd /Users/SestaMac/Documents/class/reserch/PatternVis"
+alias count="/Users/SestaMac/Documents/develop/sh/count_down/count.sh"
+
