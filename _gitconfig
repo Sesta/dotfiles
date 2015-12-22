@@ -2,5 +2,5 @@
   name = Sesta
   email = sesta.ec5@gmail.com
 [core]
-  excludesfile = /Users/SestaMac/.gitignore_global
+  excludesfile = ~/.gitignore_global
   editor = vim
