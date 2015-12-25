@@ -36,3 +36,17 @@ $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 $ git clone https://github.com/riywo/anyenv ~/.anyenv
 ```
 参考 : http://qiita.com/luckypool/items/f1e756e9d3e9786ad9ea
+
+### tmux power-line
+tmux は大丈夫だよね
+```
+$ mkdir ~/.tmux
+$ cd ~/.tmux
+$ git clone git://github.com/erikw/tmux-powerline.git
+```
+font はここから好きなのを設定( 俺は`SourceCodePro` )
+```
+$ git clone https://github.com/powerline/fonts.git
+```
+参考 : http://matsu.teraren.com/blog/2013/02/10/moteru-tmux-powerline/
+参考 : http://qiita.com/qurage/items/4edda8559cc4c98758ee
