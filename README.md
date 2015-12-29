@@ -17,14 +17,6 @@ $ chsh -s /bin/zsh
 参考
 * http://mollifier.hatenablog.com/entry/2013/02/22/025415
 
-### oh-my-zsh
-卒業したさある
-```
-$ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-```
-参考
-* http://qiita.com/udzura/items/0d08d71d809bfd8c5981
-
 ### NeoBundle
 `/bundle/`にいれるのは古いのだろうか
 ```
