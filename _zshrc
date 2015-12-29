@@ -54,10 +54,10 @@ zstyle ":vcs_info:*" max-exports 6
 
 if is-at-least 4.3.10; then
     zstyle ":vcs_info:git:*" check-for-changes true # commitしていないのをチェック
-    zstyle ":vcs_info:git:*" stagedstr "+"
-    zstyle ":vcs_info:git:*" unstagedstr "*"
-    zstyle ":vcs_info:git:*" formats "(%b) %c%u"
-    zstyle ":vcs_info:git:*" actionformats "(%s)-[%b|%a] %c%u"
+    zstyle ":vcs_info:git:*" stagedstr "%F{yellow}+ "
+    zstyle ":vcs_info:git:*" unstagedstr "%F{red}* "
+    zstyle ":vcs_info:git:*" formats "%F{green}%c%u(%b)"
+    zstyle ":vcs_info:git:*" actionformats "%F{green}%c%u(%s)-[%b|%a]"
 fi
 
 function vcs_prompt_info() {
