@@ -56,13 +56,13 @@ if is-at-least 4.3.10; then
     zstyle ":vcs_info:git:*" check-for-changes true # commitしていないのをチェック
     zstyle ":vcs_info:git:*" stagedstr "%F{yellow}+ "
     zstyle ":vcs_info:git:*" unstagedstr "%F{red}* "
-    zstyle ":vcs_info:git:*" formats "%F{green}%c%u(%b)"
-    zstyle ":vcs_info:git:*" actionformats "%F{green}%c%u(%s)-[%b|%a]"
+    zstyle ":vcs_info:git:*" formats "%c%u(%b)"
+    zstyle ":vcs_info:git:*" actionformats "%c%u(%s)-[%b|%a]"
 fi
 
 function vcs_prompt_info() {
     LANG=en_US.UTF-8 vcs_info
-    [[ -n "$vcs_info_msg_0_" ]] && echo -n " %{$fg[yellow]%}$vcs_info_msg_0_%f"
+    [[ -n "$vcs_info_msg_0_" ]] && echo -n " %{$fg[white]%}$vcs_info_msg_0_%f"
 }
 
 PROMPT='%F{green}%n@%m: '
@@ -71,6 +71,7 @@ PROMPT+="\$(vcs_prompt_info)"
 PROMPT+='
 '
 PROMPT+='$ '
+
 RPROMPT="[%*]"
 
 # ls
