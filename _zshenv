@@ -10,7 +10,7 @@ path=(
   ~/bin
   ~/.anyenv/bin(N-/)
   ~/.go/bin(N-/)
-  ~/dotfiles/bin/(N-/)
+  ~/dotfiles/bin(N-/)
   $path
 )
 

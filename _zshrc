@@ -1,5 +1,5 @@
-# Vi ライクな操作を有効にる
-bindkey -v
+# emacs ライクな操作を有効にる
+bindkey -e
 
 # 自動補完を有効にする
 autoload -U compinit; compinit
