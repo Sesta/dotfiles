@@ -89,5 +89,4 @@ alias gbr="git branch"
 alias glg="git log --graph --oneline --color"
 alias pixiv="ssh -A pixiv-dev"
 alias vislab="ssh takedas@www.vislab.cs.tsukuba.ac.jp"
-alias count="~/Documents/develop/sh/count_down/count.sh"
 
