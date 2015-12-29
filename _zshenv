@@ -6,10 +6,10 @@ path=(
   /usr/sbin
   /usr/local/bin
   /usr/local/sbin
-  /usr/local/git/bin
+  /usr/local/git/bin(N-/)
   ~/bin
-  ~/.anyenv/bin
-  ~/.go/bin
+  ~/.anyenv/bin(N-/)
+  ~/.go/bin(N-/)
   $path
 )
 
@@ -19,13 +19,3 @@ export LC_ALL=en_US.UTF-8
 
 # エディタ
 export EDITOR=/usr/local/bin/vim
-
-# もし .zshenv を複数のマシンで共有していて、
-# あるマシンには存在するが別のマシンには存在しないパスを PATH に追加したいなら、
-# パスの後ろに (N-/) をつけるとよい
-# こうすると、パスの場所にディレクトリが存在しない場合、パスが空文字列に置換される
-# 詳細は `man zshexpn` の Glob Qualifiers を参照
-path=(
-    /Documents/develop/sh/count_down(N-/)
-    $path
-)

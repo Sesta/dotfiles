@@ -32,11 +32,24 @@ zstyle ':completion:*:default' menu select=1
 # 単語の一部として扱われる文字のセットを指定する
 WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
-## 入力しているコマンド名が間違っている場合にもしかして：を出す。
+# 入力しているコマンド名が間違っている場合にもしかして：を出す。
 setopt correct
 
-## 色を使う
+# 色を使う
 setopt prompt_subst
+
+# PROMPT
+PROMPT='%F{green}%n@%m: '
+PROMPT+='%F{blue}%~%f'
+PROMPT+='
+'
+PROMPT+='$ '
+
+# ls
+alias ls="ls -G"
+alias l="ls -la"
+alias la="ls -la"
+alias l1="ls -1"
 
 # sesta alias
 alias vi="vim"
@@ -46,5 +59,6 @@ alias gdf="git diff"
 alias gbr="git branch"
 alias glg="git log --graph --oneline --color"
 alias pixiv="ssh -A pixiv-dev"
+alias vislab="ssh takedas@www.vislab.cs.tsukuba.ac.jp"
 alias count="~/Documents/develop/sh/count_down/count.sh"
 
