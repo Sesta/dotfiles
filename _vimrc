@@ -36,6 +36,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " インストールするプラグインをここに記述
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
+NeoBundle 'digitaltoad/vim-pug.git'
+
+au BufRead,BufNewFile,BufReadPre *.jade   set filetype=pug
 
 call neobundle#end()
 

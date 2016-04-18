@@ -101,6 +101,4 @@ alias gst="git status"
 alias gdf="git diff"
 alias gbr="git branch"
 alias glg="git log --graph --oneline --color"
-alias pixiv="ssh -A pixiv-dev"
-alias vislab="ssh takedas@www.vislab.cs.tsukuba.ac.jp"
 
