@@ -15,6 +15,7 @@ set virtualedit=block
 set whichwrap=b,s,[,],<,>
 set backspace=indent,eol,start
 set wildmenu
+set incsearch
 set hlsearch
 let &grepprg = 'git grep -n'
 syntax on
