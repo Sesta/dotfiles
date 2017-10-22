@@ -15,8 +15,8 @@ set virtualedit=block
 set whichwrap=b,s,[,],<,>
 set backspace=indent,eol,start
 set wildmenu
-set clipboard+=unnamed
 set hlsearch
+let &grepprg = 'git grep -n'
 syntax on
 
 augroup fileTypeIndent
@@ -46,6 +46,4 @@ call neobundle#end()
 NeoBundleCheck
 " ファイルタイプ別のプラグイン/インデントを有効にする
 filetype plugin indent on
-
-
 
