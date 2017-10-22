@@ -37,6 +37,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'digitaltoad/vim-pug.git'
+NeoBundle 'editorconfig/editorconfig-vim'
 
 au BufRead,BufNewFile,BufReadPre *.jade   set filetype=pug
 
