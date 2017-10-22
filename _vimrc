@@ -20,12 +20,6 @@ set hlsearch
 let &grepprg = 'git grep -n'
 syntax on
 
-augroup fileTypeIndent
-  autocmd!
-  autocmd FileType php setlocal shiftwidth=2 tabstop=2
-  autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
-augroup END
-
 if has('vim_starting')
    " 初回起動時のみruntimepathにneobundleのパスを指定する
    set runtimepath+=~/.vim/bundle/neobundle.vim/
