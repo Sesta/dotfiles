@@ -80,7 +80,7 @@ function vcs_prompt_info() {
 }
 
 PROMPT='%F{green}%n@%m: '
-PROMPT+='%F{blue}%~%f '
+PROMPT+='%F{cyan}%~%f '
 PROMPT+="\$(vcs_prompt_info)"
 PROMPT+='
 '
