@@ -49,6 +49,9 @@ WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 # 入力しているコマンド名が間違っている場合にもしかして：を出す。
 setopt correct
 
+# ls の結果の色を変更
+export LSCOLORS=gxfxcxdxbxegedabagacad
+
 # 色を使う
 setopt prompt_subst
 
