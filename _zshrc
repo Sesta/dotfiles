@@ -104,4 +104,5 @@ alias gst="git status"
 alias gdf="git diff"
 alias gbr="git branch"
 alias glg="git log --graph --oneline --color"
+alias dev="cd ~/dev"
 
