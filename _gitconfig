@@ -10,3 +10,8 @@
   st = status
   lg = log --graph --oneline --color
   df = diff
+  pl = pull
+  plm = pull origin master
+  ps = push
+  psm = push origin master
+  fe = fetch
