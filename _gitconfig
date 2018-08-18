@@ -4,3 +4,9 @@
 [core]
   excludesfile = ~/.gitignore_global
   editor = vim
+[alias]
+  br = branch
+  co = checkout
+  st = status
+  lg = log --graph --oneline --color
+  df = diff
