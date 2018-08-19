@@ -12,7 +12,7 @@ setup-all: ## 全てsetupする
 setup-brew: ## brewのsetup
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# TOOD: ~/にdotfilesを置いてなくてもいい感じに動くようにする
+# TODO: ~/にdotfilesを置いてなくてもいい感じに動くようにする
 setup-git: ## gitのsetup
 	ln -s ~/dotfiles/_gitignore_global ~/.gitignore_global
 	ln -s ~/dotfiles/_gitconfig ~/.gitconfig
