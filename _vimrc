@@ -33,6 +33,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'digitaltoad/vim-pug.git'
 NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle 'leafgarland/typescript-vim'
 
 au BufRead,BufNewFile,BufReadPre *.jade   set filetype=pug
 
