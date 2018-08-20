@@ -7,6 +7,7 @@
 [alias]
   br = branch
   co = checkout
+  com = checkout master
   st = status
   lg = log --graph --oneline --color
   df = diff
@@ -15,3 +16,14 @@
   ps = push
   psm = push origin master
   fe = fetch
+  cm = commit
+  cmv = commit -v
+  cmav = commit -av
+  rb = rebase
+  rbm = rebase master
+  mg = merge
+  mgnf = merge --no-ff
+  cp = cherr-pick
+  rs = reset
+  rsone = reset --soft HEAD~
+  rsm = reset --hard origin/master
