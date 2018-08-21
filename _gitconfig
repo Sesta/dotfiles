@@ -23,7 +23,7 @@
   rbm = rebase master
   mg = merge
   mgnf = merge --no-ff
-  cp = cherr-pick
+  cp = cherry-pick
   rs = reset
   rsone = reset --soft HEAD~
   rsm = reset --hard origin/master
