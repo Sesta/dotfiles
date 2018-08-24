@@ -9,8 +9,9 @@ setup-all: ## 全てsetupする
 	make setup-anyenv
 	make setup-vim
 
-setup-brew: ## brewのsetup
+setup-brew: ## brewのsetupして特殊な設定がいらないtoolたちをinstall
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	brew install tree
 
 # TODO: ~/にdotfilesを置いてなくてもいい感じに動くようにする
 setup-git: ## gitのsetup
