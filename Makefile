@@ -9,14 +9,6 @@ setup-all: ## 全てsetupする
 	make setup-anyenv
 	make setup-vim
 
-setup-brew: ## brewのsetup
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# TODO: ~/にdotfilesを置いてなくてもいい感じに動くようにする
-setup-git: ## gitのsetup
-	ln -s ~/dotfiles/_gitignore_global ~/.gitignore_global
-	ln -s ~/dotfiles/_gitconfig ~/.gitconfig
-
 # TODO: zshがない場合も考慮する
 setup-zsh: ## zsh-setup
 	chsh -s /bin/zsh
@@ -24,6 +16,15 @@ setup-zsh: ## zsh-setup
 	ln -s ~/dotfiles/_zshrc ~/.zshrc
 	ln -s ~/dotfiles/_zshenv ~/.zshenv
 	exec $SHELL -l
+
+# TODO: ~/にdotfilesを置いてなくてもいい感じに動くようにする
+setup-git: ## gitのsetup
+	ln -s ~/dotfiles/_gitignore_global ~/.gitignore_global
+	ln -s ~/dotfiles/_gitconfig ~/.gitconfig
+
+setup-brew: ## brewのsetupして特殊な設定がいらないtoolたちをinstall
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	brew install tree
 
 setup-tmux: ## tmuxのsetup
 	brew install tmux
