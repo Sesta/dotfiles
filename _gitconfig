@@ -28,3 +28,9 @@
   rs = reset
   rsone = reset --soft HEAD~
   rsm = reset --hard origin/master
+  rem = remote
+  rema = remote add
+  remao = remote add origin
+  remau = remote add upstream
+  remso = remote set-url origin
+  remsu = remote set-url upstream
