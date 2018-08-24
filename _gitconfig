@@ -21,6 +21,7 @@
   cmav = commit -av
   rb = rebase
   rbm = rebase master
+  rbum = rebase upstream/master
   mg = merge
   mgnf = merge --no-ff
   cp = cherry-pick
