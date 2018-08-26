@@ -12,8 +12,10 @@
   lg = log --graph --oneline --color
   df = diff
   pl = pull
+  plo = pull origin
   plm = pull origin master
   ps = push
+  pso = push origin
   psm = push origin master
   fe = fetch
   cm = commit
