@@ -13,8 +13,9 @@ setup-all: ## 全てsetupする
 setup-zsh: ## zsh-setup
 	chsh -s /bin/zsh
 	# 参考: http://mollifier.hatenablog.com/entry/2013/02/22/025415
-	ln -s ~/dotfiles/config/.zshrc ~/.zshrc
 	ln -s ~/dotfiles/config/.zshenv ~/.zshenv
+	ln -s ~/dotfiles/config/.zprofile ~/.zprofile
+	ln -s ~/dotfiles/config/.zshrc ~/.zshrc
 	exec $$SHELL -l
 
 # TODO: ~/にdotfilesを置いてなくてもいい感じに動くようにする
@@ -25,6 +26,8 @@ setup-git: ## gitのsetup
 setup-brew: ## brewのsetupして特殊な設定がいらないtoolたちをinstall
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	brew install tree
+	brew install direnv
+	# direnvの参考: https://qiita.com/kompiro/items/5fc46089247a56243a62
 
 setup-tmux: ## tmuxのsetup
 	brew install tmux
@@ -32,7 +35,6 @@ setup-tmux: ## tmuxのsetup
 
 setup-anyenv: ## anyenvのsetup
 	git clone https://github.com/riywo/anyenv ~/.anyenv
-	ln -s ~/dotfiles/config/.zprofile ~/.zprofile
 	# 参考: http://qiita.com/luckypool/items/f1e756e9d3e9786ad9ea
 
 setup-vim: ## vimのsetup
