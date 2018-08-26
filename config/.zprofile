@@ -1,3 +1,7 @@
-# anyenv の初期化
-eval "$(anyenv init -)"
-eval "$(direnv hook zsh)"
+if [ -x "`which anyenv`" ]; then
+  eval "$(anyenv init -)"
+fi
+
+if [ -x "`which direnv`" ]; then
+  eval "$(direnv hook zsh)"
+fi
