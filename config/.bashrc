@@ -12,11 +12,6 @@ fi
 
 #takedas setting
 alias vi="vim"
-alias gco="git checkout"
-alias gst="git status"
-alias gdf="git diff"
-alias gbr="git branch"
-alias glg="git log --graph --oneline --color"
 
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
