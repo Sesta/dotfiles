@@ -43,6 +43,15 @@ setup-vim: ## vimのsetup
 	git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 	# 参考: http://qiita.com/Kuchitama/items/68b6b5d5ed40f6f96310
 
+setup-bashrc: ## bashのsetup
+	ln -s ~/dotfiles/config/.bashrc ~/.bashrc
+	curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > ~/.git-completion.bash
+	chmod a+x ~/.git-completion.bash
+	curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh > ~/.git-prompt.sh
+	chmod a+x ~/.git-prompt.sh
+	# 参考: https://qiita.com/varmil/items/9b0aeafa85975474e9b6
+	# curlに変えてるけど多分動く
+
 .PHONY: help
 help:
 	@grep -E '^[a-z0-9A-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
