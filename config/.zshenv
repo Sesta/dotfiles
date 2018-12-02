@@ -11,6 +11,7 @@ path=(
   ~/.anyenv/bin(N-/)
   ~/.go/bin(N-/)
   ~/dotfiles/bin(N-/)
+  ~/flutter/bin
   $path
 )
 
