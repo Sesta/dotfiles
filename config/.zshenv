@@ -21,3 +21,6 @@ export LC_ALL=en_US.UTF-8
 
 # エディタ
 export EDITOR=/usr/bin/vim
+
+# homebrew
+export HOMEBREW_INSTALL_CLEANUP=1
