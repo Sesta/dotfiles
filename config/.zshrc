@@ -14,9 +14,6 @@ setopt auto_cd
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-# ディレクトリパスの展開
-hash -d ptnvis=~/Documents/class/reserch/PatternVis
-
 # cd した先のディレクトリをディレクトリスタックに追加する
 setopt auto_pushd
 
@@ -45,9 +42,6 @@ zstyle ':completion:*:default' menu select=1
 
 # 単語の一部として扱われる文字のセットを指定する
 WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
-
-# 入力しているコマンド名が間違っている場合にもしかして：を出す。
-setopt correct
 
 # ls の結果の色を変更
 export LSCOLORS=gxfxcxdxbxegedabagacad
@@ -102,3 +96,4 @@ alias vi="vim"
 alias dev="cd ~/dev"
 alias tree="tree -L 3 -a -I 'node_modules|.git' -N"
 alias routine="brew update && brew upgrade && brew doctor && npm i -g npm"
+
