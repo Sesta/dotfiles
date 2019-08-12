@@ -7,6 +7,7 @@
 [alias]
   br = branch
   bra = branch -a
+  brd = branch -d
   co = checkout
   com = checkout master
   st = status
@@ -38,5 +39,11 @@
   remau = remote add upstream
   remso = remote set-url origin
   remsu = remote set-url upstream
-  uia = update-index --assume-unchanged
+  uia = update-index --assume-unchanged // ファイルを無視する
   uina = update-index --no-assume-unchanged
+
+  stash-fuck = !git checkout --ours . && git reset && git checkout .
+  delete-merged-branch = !git br --merged | grep -E 'feature/|fix/' | xargs git brd
+  hoo = !git com && git fep && git plm
+  yeah = !git hoo && git delete-merged-branch
+
