@@ -44,6 +44,6 @@
 
   stash-fuck = !git checkout --ours . && git reset && git checkout .
   delete-merged-branch = !git br --merged | grep -E 'feature/|fix/' | xargs git brd
-  hoo = !git com && git fep && git plm
-  yeah = !git hoo && git delete-merged-branch
+  hoo = !git com && git fep && git plm && git bra
+  yeah = !git com && git fep && git plm && git delete-merged-branch && git bra
 
