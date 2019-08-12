@@ -41,6 +41,8 @@
   remsu = remote set-url upstream
   uia = update-index --assume-unchanged
   uina = update-index --no-assume-unchanged
+
+  stash-fuck = !git checkout --ours . && git reset && git checkout .
   delete-merged-branch = !git br --merged | grep -E 'feature/|fix/' | xargs git brd
   hoo = !git com && git fep && git plm
   yeah = !git hoo && git delete-merged-branch
