@@ -41,7 +41,7 @@
   remau = remote add upstream
   remso = remote set-url origin
   remsu = remote set-url upstream
-  uia = update-index --assume-unchanged // ファイルを無視する
+  uia = update-index --assume-unchanged # ファイルを無視する
   uina = update-index --no-assume-unchanged
 
   stash-fuck = !git checkout --ours . && git reset && git checkout .
