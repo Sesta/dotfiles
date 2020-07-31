@@ -95,5 +95,5 @@ alias l1="ls -1"
 alias vi="vim"
 alias dev="cd ~/dev"
 alias tree="tree -L 3 -a -I 'node_modules|.git' -N"
-alias routine="brew update && brew upgrade && brew doctor && npm i -g npm"
+alias routine="brew upgrade && brew doctor && npm i -g npm"
 
