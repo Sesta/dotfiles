@@ -21,6 +21,7 @@
   ps = push
   pso = push origin
   psm = push origin master
+  psd = push --delete origin
   fe = fetch
   fep = fetch --prune
   cm = commit
