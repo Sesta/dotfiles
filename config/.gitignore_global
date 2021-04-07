@@ -3,7 +3,7 @@
 .htaccess
 .idea
 .envrc
-
+.node-version
 
 ## macOS: https://github.com/github/gitignore/blob/master/Global/macOS.gitignore
 # General
