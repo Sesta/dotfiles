@@ -94,6 +94,6 @@ alias l1="ls -1"
 # sesta alias
 alias vi="vim"
 alias dev="cd ~/dev"
-alias tree="tree -L 3 -a -I 'node_modules|.git' -N"
+alias tree="tree -L 3 -a -I 'node_modules|.git|.cache|.DS_Store' -N"
 alias routine="brew upgrade && brew doctor && npm i -g npm"
 
