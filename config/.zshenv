@@ -7,6 +7,7 @@ path=(
   /usr/local/bin
   /usr/local/sbin
   /usr/local/git/bin(N-/)
+  /opt/homebrew/bin
   ~/bin
   ~/.anyenv/bin(N-/)
   ~/.go/bin(N-/)
