@@ -1,16 +1,5 @@
 # PATH 設定
 path=(
-  /bin
-  /sbin
-  /usr/bin
-  /usr/sbin
-  /usr/local/bin
-  /usr/local/sbin
-  /usr/local/git/bin(N-/)
-  /opt/homebrew/bin
-  ~/bin
-  ~/.anyenv/bin(N-/)
-  ~/.go/bin(N-/)
   ~/dotfiles/bin(N-/)
   ~/flutter/bin
   $path
@@ -25,3 +14,4 @@ export EDITOR=/usr/bin/vim
 
 # homebrew
 export HOMEBREW_INSTALL_CLEANUP=1
+
