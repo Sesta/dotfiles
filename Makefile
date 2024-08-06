@@ -41,7 +41,7 @@ setup-anyenv: ## anyenvのsetup
 setup-vim: ## vimのsetup
 	ln -s ~/dotfiles/config/.vimrc ~/.vimrc
 	mkdir -p ~/.vim/bundle
-	git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+	git clone git@github.com:Shougo/neobundle.vim.git ~/.vim/bundle/neobundle.vim
 	# 参考: http://qiita.com/Kuchitama/items/68b6b5d5ed40f6f96310
 
 setup-bashrc: ## bashのsetup
