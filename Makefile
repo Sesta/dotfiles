@@ -24,7 +24,8 @@ setup-git: ## gitのsetup
 	ln -s ~/dotfiles/config/.gitconfig ~/.gitconfig
 
 setup-brew: ## brewのsetupして特殊な設定がいらないtoolたちをinstall
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	// 失敗しがちなのでpkgをダウンロードしたほうが良いかも
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	brew install tree
 	brew install direnv
 	# direnvの参考: https://qiita.com/kompiro/items/5fc46089247a56243a62
